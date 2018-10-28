@@ -20,7 +20,9 @@ Auth::routes();
 
 Route::get('/', 'PagesController@homepage')->name('homepage');
 
-Route::get('/home', 'PagesController@contact')->name('loginhome');
+Route::get('/home', 'HomeController@index')->name('loginhome');
+
+Route::get('/about', 'PagesController@about')->name('about');
 
 Route::get('/contact', 'PagesController@contact')->name('contact');
 
