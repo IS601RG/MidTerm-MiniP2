@@ -14,10 +14,11 @@ class CountNumberTest extends TestCase
      *
      * @return void
      */
+       /** @test */
     public function CountNumberTest()
     {
         $users = User::all();
         $recordCountNumber = $users->count();
-        $this->assertTrue(50, $recordCountNumber);
+        $this->assertEquals(50, $recordCountNumber);
     }
 }
